@@ -2377,7 +2377,7 @@ pub fn option2bool(option: &str, value: &str) -> bool {
     if option == "direct-server" ||
        option == "allow-remote-config-modification" ||
        option == "allow-numeric-one-time-password" {
-        value != "N"
+        value == "Y"
     } else if option.starts_with("enable-") {
         value != "N"
     } else if option.starts_with("allow-") ||
